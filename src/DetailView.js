@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getRecipeDetails } from './api';
-import { Routes, Route, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 
 const DetailView = () => {
