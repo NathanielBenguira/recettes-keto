@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getRecipeDetails } from './api';
+import { getRecipeDetails } from '../../api';
 import { useParams } from 'react-router-dom';
 
 
@@ -19,8 +19,10 @@ const DetailView = () => {
   if (!recipe) {
     return <div>Loading...</div>;
   }
+  console.log(recipe)
 
   return (
+    
     <div className="detail-view">
       
       <h1>{recipe.title}</h1>
@@ -31,11 +33,11 @@ const DetailView = () => {
 
       {recipe?.difficulty?.map(item => <div> {item} </div>)}
 
-      {recipe?.nbr_persons?.map(item => <div> {item} Personnes</div>)}
+      { Array.isArray(recipe?.nbr_persons) && recipe?.nbr_persons?.map(item => <div> {item} Personnes</div>) }
       
-      {recipe?.ingredients?.map(item => <div> {item} </div>)}
+      {/* {recipe?.ingredients?.map(item => <div> {item} </div>)} */}
       
-      {recipe?.steps?.map(item => <div> <img src={item.image} /> {item.description} </div>)}
+      {/* {recipe?.steps?.map(item => <div> <img src={item.image} alt={recipe.title}/> {item.description} </div>)} */}
     </div>
   );
 };

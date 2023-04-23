@@ -7,7 +7,7 @@ export const getRecipes = async () => {
     const response = await axios.get(apiUrl, {
       params: {
         paged: 1,
-        posts_per_page: 1000,
+        posts_per_page: 5,
         category_name: '',
         tag: 'recette-keto'
       }
