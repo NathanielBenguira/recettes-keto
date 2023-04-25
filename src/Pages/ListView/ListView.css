@@ -1,7 +1,11 @@
 #list-container{
     padding: 0 20px;
     width: 100%;
+    text-align: center;
 }
 #list-view{
     display: flex;
+}
+#searchInput{
+    width: 80%;
 }
