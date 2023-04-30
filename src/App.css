@@ -13,4 +13,6 @@
   font-size: 25px;
   font-weight: bold;
   cursor: pointer;
+  margin: 10px;
+  display: block;
 }

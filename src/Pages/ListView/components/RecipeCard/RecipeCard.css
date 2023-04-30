@@ -6,12 +6,9 @@
     border: 1px solid black;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #787676;
+    box-shadow: 5px 5px 5px #e5e5e5;
 }
 .recipeTitle{
     font-weight: bold;
     margin: 10px 0;
-}
-.recipeSubTitle{
-    
 }
