@@ -1,7 +1,25 @@
 #list-container{
     padding: 0 20px;
     width: 100%;
+    text-align: center;
 }
 #list-view{
     display: flex;
 }
+#searchInput{
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    font-size: 20px;
+}
+
+.list-container i {
+    position: absolute;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+  
